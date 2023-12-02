@@ -1,0 +1,721 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Header aligned to top -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/msg_title_filtrar_companies"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/filtrar_por"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="@color/font_default"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/div_btns_filtrar_companies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_filtrar_marcas_companies"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginLeft="78dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginStart="78dp"
+                android:gravity="center"
+                android:text="@string/marcas"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorPrimary" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_filtrar_litros_companies"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="Litros"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorPrimary" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!-- Content below header and above footer -->
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:id="@+id/div_geral_filtrar_companies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <!--LinearLayout
+                android:id="@+id/div_filtros1_companies"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_filtros2_companies"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_filtros3_companies"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_filtros4_companies"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_filtros5_companies"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout-->
+
+            <!--LinearLayout
+                android:id="@+id/div_filtros6_companies"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_filtros7_companies"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_filtros8_companies"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Nativa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Crystal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_filtro32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="Bonafont"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/background" />
+            </LinearLayout-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/div_ordernar_companies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div_geral_filtrar_companies"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/div_title_ordenar_companies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/msg_ordernar_filtrar_companies"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/ordenar_por"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    android:textColor="#585656"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_options_ordenar_companies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:divider="?android:dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <ListView
+                    android:id="@+id/list_op_companies"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:choiceMode="singleChoice"
+                    android:paddingLeft="@dimen/page_margin"
+                    android:paddingRight="@dimen/page_margin"
+                    android:scrollbarStyle="outsideOverlay" />
+                <!--TableRow
+                        android:id="@+id/hr_cresc"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@color/place_autocomplete_search_hint"></TableRow-->
+
+                <!--CheckBox android:id="@+id/checkbox_meat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ordenar_por"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_cheese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filtro_prompt"
+                        android:onClick="onCheckboxClicked"/-->
+
+
+                <!--TableRow
+                        android:id="@+id/hr_decresc"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@color/place_autocomplete_search_hint"></TableRow-->
+
+                <!--Spinner
+                        android:id="@+id/combo_order_companies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:dropDownVerticalOffset="@dimen/margin_combo_filtro"
+                        android:entries="@array/filtro_companies_arrays"
+                        android:gravity="center"
+                        android:prompt="@string/filtro_prompt" /-->
+
+            </LinearLayout>
+
+            <!--TextView
+                    android:id="@+id/msg_localizacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="@string/msg_localizacao_content"
+                    android:textAppearance="?android:attr/textAppearanceListItem"
+                    android:textColor="@color/button_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" /-->
+        </LinearLayout>
+
+            <!--android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrool_gerais"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:scrollbars="vertical">
+
+
+            </android.support.v4.widget.NestedScrollView-->
+
+
+
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/div_btn_lim_filt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_limpar_filtros_companies"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:layout_marginEnd="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:text="Limpar Filtros"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/button_green" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_save_end"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="Filtrar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/button_green" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

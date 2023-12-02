@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gs.h2oapp.Action.AdressActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrool_gerais_user_updt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/divGeraisUserUptd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/div_name_user_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name_update_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:gravity="top"
+                    android:nextFocusDown="@+id/input_update_cep"
+                    android:nextFocusForward="@+id/input_update_cep"
+                    android:scrollbars="vertical"
+                    app:hintEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_name_update_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_name"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:id="@+id/div_cep_num_adress_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_update_cep"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:nextFocusDown="@+id/input_number_update_adress"
+                    android:nextFocusForward="@+id/input_number_update_adress"
+                    android:nextFocusLeft="@+id/input_number_update_adress"
+                    android:nextFocusRight="@+id/input_number_update_adress"
+                    android:nextFocusUp="@+id/input_number_update_adress">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_update_cep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_cep"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/input_number_update_adress"
+                        android:nextFocusForward="@+id/input_number_update_adress"
+                        android:nextFocusLeft="@+id/input_number_update_adress"
+                        android:nextFocusRight="@+id/input_number_update_adress"
+                        android:nextFocusUp="@+id/input_number_update_adress"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_number_update_adress"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="195dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="-58dp"
+                    android:background="#FFFFFF"
+                    android:nextFocusDown="@+id/input_adress_update_adress"
+                    android:nextFocusForward="@+id/input_adress_update_adress">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_number_update_adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_number"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/input_adress_update_adress"
+                        android:nextFocusForward="@+id/input_adress_update_adress"
+                        android:nextFocusLeft="@+id/input_adress_update_adress"
+                        android:nextFocusRight="@+id/input_adress_update_adress" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_adress_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="8dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_adress_update_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:nextFocusUp="@+id/input_number_update_adress"
+                    android:nextFocusDown="@+id/input_bairro_update_adress"
+                    android:nextFocusForward="@+id/input_bairro_update_adress">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_adress_update_adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:hint="@string/hint_adress"
+                        android:inputType="text"
+                        android:lines="3"
+                        android:minLines="1"
+                        android:paddingEnd="5dp"
+                        android:paddingRight="5dp"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_bairro_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="8dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_bairro_update_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:nextFocusUp="@+id/input_adress_update_adress"
+                    android:nextFocusDown="@+id/input_cidade_update_adress"
+                    android:nextFocusForward="@+id/input_cidade_update_adress">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_bairro_update_adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:hint="@string/hint_bairro"
+                        android:inputType="text"
+                        android:lines="3"
+                        android:minLines="1"
+                        android:paddingEnd="5dp"
+                        android:paddingRight="5dp"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_cidade_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_cidade_update_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:nextFocusUp="@+id/input_bairro_update_adress"
+                    android:nextFocusDown="@+id/input_complemento_update_adress"
+                    android:nextFocusForward="@+id/input_complemento_update_adress">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_cidade_update_adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:hint="@string/hint_cidade"
+                        android:inputType="text"
+                        android:lines="3"
+                        android:minLines="1"
+                        android:paddingEnd="5dp"
+                        android:paddingRight="5dp"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/div_fone_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_fone_update_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:gravity="top"
+                    android:scrollbars="vertical">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_fone_update_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:hint="@string/hint_fone"
+                        android:inputType="phone"
+                        android:lines="3"
+                        android:minLines="1"
+                        android:paddingEnd="5dp"
+                        android:paddingRight="5dp"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/div_bnt_user_updt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_cadastrar_update_user"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:text="@string/btn_editar"
+                    android:textColor="@android:color/white"
+                    android:theme="@style/AppTheme.NoActionBar" />
+
+                <Button
+                    android:id="@+id/btn_remove_user"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="195dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="-55dp"
+                    android:background="@color/button_orange"
+                    android:text="@string/btn_excluir"
+                    android:textColor="@android:color/white"
+                    android:theme="@style/AppTheme.NoActionBar" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

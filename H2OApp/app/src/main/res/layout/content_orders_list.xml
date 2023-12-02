@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!--LinearLayout
+        android:id="@+id/div_rem_order"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnRemOrder"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="#ffffff"
+            android:contentDescription="@string/img_add_cart"
+            app:srcCompat="@drawable/ic_cancel_grey_24" />
+    </LinearLayout-->
+
+
+    <LinearLayout
+        android:id="@+id/div_logo_order"
+        android:layout_width="@dimen/logo_size_w"
+        android:layout_height="@dimen/avator_size"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/list_logo_order"
+            android:layout_width="@dimen/logo_size_w"
+            android:layout_height="@dimen/avator_size"
+            android:contentDescription="@string/logoapp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_nativa"/>
+          </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/div_nm_company_order"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="-59dp"
+
+        android:clickable="true"
+        android:orientation="vertical"
+        android:focusable="true">
+        <TextView
+            android:id="@+id/name_company_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="bottom|center"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="20sp"
+            tools:text="@string/item_title" />
+    </LinearLayout>
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="85dp"
+        android:background="@color/place_autocomplete_search_hint"
+        android:layout_marginStart="85dp"></TableRow>
+    <LinearLayout
+        android:id="@+id/div_data_orders"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp"
+
+        android:clickable="false"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblData"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/hint_data"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_data_order"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/div_valor_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp"
+        android:clickable="false"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lblEntrega"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/entrega"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/list_entrega_order"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/div_total_order"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp"
+        android:clickable="false"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lblTotal"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/total"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/list_total_order"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+</LinearLayout>

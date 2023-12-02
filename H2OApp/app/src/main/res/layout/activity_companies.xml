@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_companies"
+    android:label="@string/ac_company_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme"
+    tools:context="com.gs.h2oapp.Action.CompaniesActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/div_header"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/my_bar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/div_end"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="44dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblEnd"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Endereço:"
+                android:textColor="@color/place_autocomplete_search_hint"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtRua"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <LinearLayout
+                android:id="@+id/div_change_end"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="-30dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgChangeEnd"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/lbl_mudar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mudar"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtBairroCity"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/place_autocomplete_search_hint"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/div_list_companies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical">
+
+            <!--android.support.v7.widget.RecyclerView
+                android:id="@+id/card_recycler_view_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" /-->
+
+            <include
+                layout="@layout/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <!--android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" /-->
+
+        <!--ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarCompany"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_below="@+id/button"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignLeft="@+id/textview"
+            android:layout_alignStart="@+id/textview"
+            android:layout_alignParentBottom="true" /-->
+
+
+        <include
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navheader"
+        app:menu="@menu/menu_navigation" >
+
+
+    </android.support.design.widget.NavigationView>
+
+    <!--android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="right"
+        android:background="@android:color/white"
+        app:elevation="8dp"
+        app:menu="@menu/main" /-->
+
+
+</android.support.v4.widget.DrawerLayout>

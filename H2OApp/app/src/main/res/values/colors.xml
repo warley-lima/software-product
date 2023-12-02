@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#E6E6FA</color>
+    <color name="dark_grey">#424242</color>
+    <color name="medium_grey">#9E9E9E</color>
+    <color name="button_grey">#bdbaba</color>
+    <color name="button_green">#00ced1</color>
+    <color name="button_orange">#FF6347</color>
+    <color name="red">#FF4081</color>
+    <!--color name="button_green">#54FF9F</color-->
+    <color name="button_blue">#2e9afe</color>
+    <color name="colorPrimary">#2E9AFE</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="paymentSelected">#3498db</color>
+    <color name="paymentNoSelected">#ffffff</color>
+    <color name="hideable_text_color">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_checked="false" android:color="#6000" />
+            <item android:color="#09c" />
+        </selector>
+    </color>
+    <color name="font_default">#585656</color>
+</resources>

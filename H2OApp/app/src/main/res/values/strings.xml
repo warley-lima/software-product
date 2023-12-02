@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">"ÁguaNoApp"</string>
+    <string name="ac_company_name">"Distribuidoras"</string>
+    <string name="ac_my_adress">"Meus Endereços"</string>
+    <string name="ac_my_orders">"Meus Pedidos"</string>
+    <string name="ac_products_name">"Produtos"</string>
+    <string name="ac_product_name">"Detalhes do Produto"</string>
+    <string name="ac_cart_name">"Meu Carrinho"</string>
+    <string name="ac_orders_name">"Meus Pedidos"</string>
+    <string name="ac_adress_up_name">"Editar Endereço"</string>
+    <string name="ac_checkout_name">"Meu Pedido"</string>
+    <string name="action_settings">Opções</string>
+    <string name="item_title">Palais Garnier</string>
+    <string name="hint_name">Nome *</string>
+    <string name="hint_fone">Telefone *</string>
+    <string name="hint_fone2">Telefone</string>
+    <string name="hint_number">Número *</string>
+    <string name="hint_cep">Cep *</string>
+    <string name="hint_complemento">Complemento</string>
+    <string name="hint_compl">Compl.</string>
+    <string name="hint_adress">Endereço</string>
+    <string name="hint_data">Data</string>
+    <string name="hint_bairro_city">Bairro/Cidade</string>
+    <string name="hint_cidade">Cidade</string>
+    <string name="hint_bairro">Bairro</string>
+    <string name="btn_confirmar">Confirmar</string>
+    <string name="btn_sign_up">Cadastrar</string>
+    <string name="err_msg_name">Informe seu nome</string>
+    <string name="err_msg_fone">Informe seu telefone</string>
+    <string name="err_msg_cep">Informe o CEP</string>
+    <string name="err_msg_name_adress">Informe o nome</string>
+    <string name="err_msg_adress">Informe o Endereço</string>
+    <string name="err_msg_bairro">Informe o Bairro</string>
+    <string name="err_msg_cidade">Informe a Cidade</string>
+    <string name="err_msg_password">Informe o número do endereço</string>
+    <string name="err_msg_payment">Escolha uma opção de Pagamento!</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_excluir">Excluir</string>
+    <string name="item_desc">Teste.</string>
+    <string name="detail_desc">Teste 2.</string>
+    <string name="detail_location">"8 Rue Scribe, 75009 Paris, France"</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="check_out">Ok</string>
+    <string name="title_activity_auto_complete">AutoCompleteActivity</string>
+    <string name="open_activity">Não encontrou?</string>
+    <string name="selected_place">Selecionado:</string>
+    <string name="intro_message"></string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Endereço: %3$s
+        <br/>
+        Telefone: %4$s
+        <br/>
+        Site: %5$s
+    ]]>
+    </string>
+    <string name="logoapp">Imagem App</string>
+    <string name="por_taxa_entrega_min">Ordernar por: Menor Taxa</string>
+    <string name="por_taxa_entrega_max">Ordernar por: Maior Taxa</string>
+    <string name="por_valor_min">Ordernar por: Menor Valor</string>
+    <string name="por_valor_max">Ordernar por: Maior Valor</string>
+    <string name="por_a_z">Ordernar por: A-Z</string>
+    <string name="por_z_a">Ordernar por: Z-A</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="back">Voltar</string>
+    <string name="valor">Valor:</string>
+    <string name="qnt">Quantidade:</string>
+    <string name="taxa">Taxa:</string>
+    <string name="distribuidora">Distribuídora:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="cidade">Cidade:</string>
+    <string name="complemento">Compl.:</string>
+    <string name="litros">Litros:</string>
+    <string name="nota">Nota:</string>
+    <string name="img_add_cart">Img Add Cart</string>
+    <string name="img_rating_product">Img Rating Product</string>
+    <string name="entrega">Entrega:</string>
+    <string name="img_pgto_money">Img Pgto Money</string>
+    <string name="pagamento">Pagamento:</string>
+    <string name="img_pgto_cart">Img Pgto Cart</string>
+    <string name="img_nota">Img Nota</string>
+    <string name="hello_sign_in_to_your_account_please">Hello! Sign in to your Account please</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="todo">TODO</string>
+    <string name="username">Username</string>
+    <string name="title_activity_cadastro_cliente">Cadastro</string>
+    <string name="title_activity_adress">Adicionar Endereço</string>
+    <string name="title_activity_adress_list">Meus Endereços</string>
+    <string name="msg_escolha_end">Escolha ou adicione um endereço:</string>
+    <string name="msg_localizacao">Não Conseguimos te localizar :(</string>
+    <string name="msg_localizacao_content">Precisamos de sua localização, assim mostraremos todas as distribuídoras na sua região :)</string>
+    <string name="msg_permit_loc">PERMITIR LOCALIZAÇÃO</string>
+    <string name="msg_info_end">INFORMAR LOCALIZAÇÃO</string>
+    <string name="cad_endereco">CADASTRAR ENDEREÇO</string>
+    <string name="filtros_organizacao"><![CDATA[Filtros & Organização]]></string>
+    <string name="ordenar_por">Ordernar Distribuídoras por:</string>
+    <string name="filtro_prompt">Escolha uma Opção</string>
+    <string name="img">img</string>
+    <string name="filtrar_por">Filtrar por:</string>
+    <string name="dicas_entrega">Dicas para a entrega:</string>
+    <string name="marcas">Marcas</string>
+    <string name="limpar_filtros">Limpar Filtros</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="msg_filtrar">Escolha nas opções abaixo:</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Fechar</string>
+    <string name="msg_info_pedido">Cão bravo, interfone quebrado, etc...</string>
+    <string name="total">Total:</string>
+    <string name="credito">Crédito</string>
+    <string name="dinheiro">Dinheiro</string>
+    <string name="pre_dados">Preencha seus dados:</string>
+    <string name="updt_perfil">Editar Perfil</string>
+    <string name="end_entrega">Endereço da Entrega:</string>
+    <string name="end">Endereço:</string>
+    <string name="debito">Débito</string>
+    <string name="cupom_desc">Cupom de desconto?</string>
+    <string name="cupom_desc_add">Adicionar</string>
+    <string name="forma_pag">Escolha a opção de Pagamento</string>
+    <string name="subtotal">Produtos:</string>
+    <string name="desc">Descontos:</string>
+    <string name="enviar">Enviar</string>
+    <string name="cupom_de_desconto">Cupom de Desconto</string>
+    <string name="confirm_order">Confirmar Pedido</string>
+    <string name="insira_seu_cupom_no_campo_abaixo">Insira seu cupom no campo abaixo:</string>
+    <string name="mudar">MUDAR</string>
+    <string-array name="filtro_companies_arrays">
+        <item>Ordernar por: A - Z</item>
+        <item>Ordernar por: Z - A</item>
+        <item>Ordernar por: Menor Taxa</item>
+        <item>Ordernar por: Maior Taxa</item>
+    </string-array>
+</resources>

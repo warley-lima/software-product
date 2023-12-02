@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:tint="@color/button_grey"
+            android:id="@+id/action_home"
+            android:title="Home" />
+
+        <item
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:tint="@color/button_grey"
+            android:id="@+id/action_meus_locais"
+            android:title="Meus Locais" />
+        <item
+            android:icon="@drawable/ic_person_black_24dp"
+            android:tint="@color/button_grey"
+            android:id="@+id/action_meu_perfil"
+            android:title="Meu Perfil" />
+        <item
+            android:icon="@drawable/ic_pedidos_black_24dp"
+            android:tint="@color/button_grey"
+            android:id="@+id/action_meus_pedidos"
+            android:title="Meus Pedidos" />
+
+        <!--item
+            android:icon="@drawable/@drawable/ic_location_on_black_24dp"
+            android:tint="@color/button_grey"
+            android:title="Perfil" /-->
+    </group>
+</menu>

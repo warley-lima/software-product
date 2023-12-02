@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginStart="4dp"
+    android:height="65dp"
+    android:gravity="center"
+    android:textColor="@color/colorPrimary"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:backgroundTint="@color/background" />

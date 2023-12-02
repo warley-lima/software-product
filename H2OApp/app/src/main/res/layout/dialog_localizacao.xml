@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/div_msg_header_localizacao"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/msg_header_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/msg_localizacao"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="@color/button_grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/div_msg_localizacao"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/msg_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/msg_localizacao_content"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="@color/button_grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/div_btn_hab_cad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:focusable="true">
+
+        <Button
+            android:id="@+id/btn_habilitar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/msg_permit_loc"
+            android:textColor="@android:color/white"
+            android:theme="@style/Theme.MaterialButton"></Button>
+
+
+        <Button
+            android:id="@+id/btn_save_end"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/cad_endereco"
+            android:textColor="@android:color/white"
+            android:theme="@style/AppTheme.NoActionBar"></Button>
+
+    </LinearLayout>
+
+
+    <!--EditText
+        android:id="@+id/username"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/username" />
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"/-->
+</LinearLayout>

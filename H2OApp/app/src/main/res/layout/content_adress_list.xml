@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gs.h2oapp.Action.AdressListActivity"
+    tools:showIn="@layout/activity_adress_list">
+
+</android.support.constraint.ConstraintLayout-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/div_adress_list"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/div_update_adress"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnUpdateAdress"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="#ffffff"
+            android:contentDescription="@string/img_add_cart"
+            app:srcCompat="@drawable/ic_edit_24" />
+    </LinearLayout>
+
+    <!--LinearLayout
+        android:id="@+id/div_rem_adress"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="-30dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnRemAdress"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="#ffffff"
+            android:contentDescription="@string/img_add_cart"
+            app:srcCompat="@drawable/ic_cancel_grey_24" />
+    </LinearLayout-->
+    <LinearLayout
+        android:id="@+id/div_nm_adress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_item_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:gravity="bottom|center"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="20sp"
+            tools:text="@string/item_title" />
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/place_autocomplete_search_hint"></TableRow>
+
+    <LinearLayout
+        android:id="@+id/div_adress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblAdress"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/hint_adress"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_adress"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:paddingLeft="6dp"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/div_bairro_adress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblBairro"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/hint_bairro"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_bairro"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:paddingLeft="6dp"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/div_cidade_adress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblCidade"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/hint_cidade"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_cidade"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:paddingLeft="6dp"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/div_comp_adress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblComp"
+            android:layout_width="68dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/hint_compl"
+            android:textColor="@color/place_autocomplete_search_hint"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_comp"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:ellipsize="end"
+            android:paddingLeft="6dp"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="@string/item_desc" />
+    </LinearLayout>
+
+</LinearLayout>
