@@ -1,0 +1,12 @@
+com\Order\Model\ProductOrder.class
+com\Order\Model\Return.class
+com\Order\Service\OrderPublicService.class
+com\Order\Service\StatusInProgress.class
+com\Order\Repository\OrderRepository.class
+com\Order\Utils\Constants.class
+com\Order\Business\OrderBusinessImp.class
+com\Order\Model\Order.class
+com\Order\Business\OrderBusiness.class
+com\Order\Model\OrderTable.class
+com\Order\Service\OrderServiceEmiter.class
+com\Order\Service\OrderService.class

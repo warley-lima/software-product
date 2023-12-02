@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Authentication" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brand" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Company" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Connection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Coupons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Products" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/QueryCep" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/BuscaDataAtual.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/BuscaServicosAdicionaisAtivos.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/BuscaServicosAdicionaisAtivosResponse.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/CancelarObjetoResponse.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/CancelarPedidoScolResponse.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/Coleta.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/ContratoERP.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/EnderecoERP.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/GerenteConta.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/IntegrarUsuarioScol.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/Objeto.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/ObjetoPostal.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/ObterEmbalagemLRSResponse.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/ServicoAdicionalERP.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/ServicoAdicionalXML.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/SolicitaXmlPlpResponse.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/StatusGerente.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/StatusPlp.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/ValidarPostagemReversa.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/QueryCep/src/main/java/com/QueryCep/WSCorreios/VerificaDisponibilidadeServico.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/Rule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/User" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WEB" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Authentication" />
+        <module name="Brand" />
+        <module name="Company" />
+        <module name="Connection" />
+        <module name="Coupons" />
+        <module name="Module" />
+        <module name="Order" />
+        <module name="Products" />
+        <module name="QueryCep" />
+        <module name="Rule" />
+        <module name="Security" />
+        <module name="User" />
+        <module name="Utils" />
+        <module name="WEB" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="AguaNoAppServer" target="1.8" />
+      <module name="Authentication" target="1.8" />
+      <module name="Brand" target="1.8" />
+      <module name="Company" target="1.8" />
+      <module name="Connection" target="1.8" />
+      <module name="Coupons" target="1.8" />
+      <module name="Module" target="1.8" />
+      <module name="Order" target="1.8" />
+      <module name="Products" target="1.8" />
+      <module name="QueryCep" target="1.8" />
+      <module name="Rule" target="1.8" />
+      <module name="Security" target="1.8" />
+      <module name="User" target="1.8" />
+      <module name="Utils" target="1.8" />
+      <module name="WEB" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Authentication" options="-parameters" />
+      <module name="Brand" options="-parameters" />
+      <module name="Company" options="-parameters" />
+      <module name="Connection" options="-parameters" />
+      <module name="Coupons" options="-parameters" />
+      <module name="Module" options="-parameters" />
+      <module name="Order" options="-parameters" />
+      <module name="Products" options="-parameters" />
+      <module name="QueryCep" options="-parameters" />
+      <module name="Rule" options="-parameters" />
+      <module name="Security" options="-parameters" />
+      <module name="User" options="-parameters" />
+      <module name="Utils" options="-parameters" />
+      <module name="WEB" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+com\User\Model\Return.class
+com\User\Model\User.class
+com\User\Business\UserBusiness.class
+com\User\Business\UserBusinessImp.class
+com\User\Service\UserDetailsServiceImp.class
+com\User\Repository\UserRepository.class
+com\User\Service\UserService.class

@@ -1,0 +1,10 @@
+com\Authentication\Service\LoginService.class
+com\Authentication\Util\Util.class
+com\Authentication\Repository\LoginRepository.class
+com\Authentication\Business\FilterCSRF.class
+com\Authentication\Util\RequestWrapper.class
+com\Authentication\Business\OAuth2ResourceServerConfigJwt$1.class
+com\Authentication\Model\Login.class
+com\Authentication\Business\AuthenticationFilterResource.class
+com\Authentication\Business\CustomAccessTokenConverter.class
+com\Authentication\Business\OAuth2ResourceServerConfigJwt.class

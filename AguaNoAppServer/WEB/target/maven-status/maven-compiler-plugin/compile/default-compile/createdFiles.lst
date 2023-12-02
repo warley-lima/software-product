@@ -1,0 +1,6 @@
+com\Web\teste\MyApplicationBinder.class
+com\Web\teste\JerseyConfig.class
+com\Web\Business\MethodSecurityConfiguration.class
+com\Web\teste\Application.class
+com\Web\teste\CorsFilter.class
+com\Web\teste\SimpleCORSFilter.class

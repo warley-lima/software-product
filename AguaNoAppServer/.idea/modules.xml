@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AguaNoAppServer.iml" filepath="$PROJECT_DIR$/AguaNoAppServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Authentication/Authentication.iml" filepath="$PROJECT_DIR$/Authentication/Authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Brand/Brand.iml" filepath="$PROJECT_DIR$/Brand/Brand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Company/Company.iml" filepath="$PROJECT_DIR$/Company/Company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Connection/Connection.iml" filepath="$PROJECT_DIR$/Connection/Connection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Coupons/Coupons.iml" filepath="$PROJECT_DIR$/Coupons/Coupons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module/Module.iml" filepath="$PROJECT_DIR$/Module/Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Order/Order.iml" filepath="$PROJECT_DIR$/Order/Order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Products/Products.iml" filepath="$PROJECT_DIR$/Products/Products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueryCep/QueryCep.iml" filepath="$PROJECT_DIR$/QueryCep/QueryCep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rule/Rule.iml" filepath="$PROJECT_DIR$/Rule/Rule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/Security.iml" filepath="$PROJECT_DIR$/Security/Security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/User/User.iml" filepath="$PROJECT_DIR$/User/User.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Utils/Utils.iml" filepath="$PROJECT_DIR$/Utils/Utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WEB/WEB.iml" filepath="$PROJECT_DIR$/WEB/WEB.iml" />
+    </modules>
+  </component>
+</project>

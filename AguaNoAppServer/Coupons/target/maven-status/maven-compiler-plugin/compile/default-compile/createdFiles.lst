@@ -1,0 +1,7 @@
+com\Coupons\Business\CouponBusinessImp.class
+com\Coupons\Business\CouponBusiness.class
+com\Coupons\Repository\CouponsRepository.class
+com\Coupons\Model\Return.class
+com\Coupons\Model\Coupons.class
+com\Coupons\Service\CouponPublicService.class
+com\Coupons\Service\CouponService.class

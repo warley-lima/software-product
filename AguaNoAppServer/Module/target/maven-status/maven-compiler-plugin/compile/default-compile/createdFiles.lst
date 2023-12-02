@@ -1,0 +1,4 @@
+com\Module\Model\Module.class
+com\Module\Service\ModuleServiceImp.class
+com\Module\Service\ModuleService.class
+com\Module\Repository\ModuleRepository.class

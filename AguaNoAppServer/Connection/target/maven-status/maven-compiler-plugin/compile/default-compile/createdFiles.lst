@@ -1,0 +1,6 @@
+com\Connection\Model\MultitenantDataSource.class
+com\Connection\Model\MultitenantDBConfiguration.class
+com\Connection\Configuration\CurrentTenantIdentifierResolverImpl.class
+com\Connection\Configuration\MultiTenantConnectionProviderImpl.class
+com\Connection\Model\TenantContext.class
+com\Connection\Util\ConnectionDataSource.class

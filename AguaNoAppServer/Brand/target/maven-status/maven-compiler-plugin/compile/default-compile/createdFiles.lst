@@ -1,0 +1,7 @@
+com\Brand\Business\BrandBusiness.class
+com\Brand\Model\Brand.class
+com\Brand\Service\BrandService.class
+com\Brand\Service\BrandPublicService.class
+com\Brand\Repository\BrandRepository.class
+com\Brand\Business\BrandBusinessImp.class
+com\Brand\Service\BrandsService.class

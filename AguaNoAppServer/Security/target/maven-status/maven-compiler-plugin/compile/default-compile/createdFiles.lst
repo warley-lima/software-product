@@ -1,0 +1,5 @@
+com\Security\Repository\OauthClientRepository.class
+com\Security\Business\OAuth2AuthServerConfigJwt.class
+com\Security\Business\CustomTokenEnhancer.class
+com\Security\Business\ServerSecurityConfig.class
+com\Security\Model\OauthClient.class

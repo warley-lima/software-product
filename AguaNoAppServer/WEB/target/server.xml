@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server port="8206" shutdown="SHUTDOWN">
+  <Listener SSLEngine="on" className="org.apache.catalina.core.AprLifecycleListener"/>
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener"/>  
+  <Service name="Catalina">	
+	<Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8444" />
+    <Connector SSLEnabled="true" acceptCount="100" clientAuth="false" disableUploadTimeout="true" enableLookups="false" 
+	keystoreFile="/home/ubuntu/nwks77.jks" keystorePass="p3g@5u5" maxThreads="250" port="8444" protocol="org.apache.coyote.http11.Http11NioProtocol" 
+	scheme="https" secure="true" sslProtocol="TLS"/>
+    <Engine defaultHost="hostaguanoapp" name="Catalina">
+      <Host name="hostaguanoapp"  appBase="webapps"
+            unpackWARs="true" autoDeploy="false">
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log." suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+      </Host>
+    </Engine>
+  </Service>
+</Server>
