@@ -1,0 +1,71 @@
+<div class="container-fluid" style="background-color: none;">
+  <section>
+  </section>
+
+  <main class="container main-space-content">
+    <div class="row ">
+      <div
+        class="col-12 col-md-9 col-lg-11 justify-content-center mx-auto"
+        style="background-color: white"
+      >
+        <app-base-table [showSearchBar] = true [tbCols] = "tbNameCols" [pages] = "pages" [first] = "first" [last] = "last" [page] = "page">
+          <tbody>
+            <tr *ngFor="let order of orders">
+              <td colspan="2">{{ order.idO }}</td>
+              <td colspan="2" class="justify-content-center">{{ order.nm }}</td>
+              <td colspan="2" class="justify-content-center">{{ order.fn }}</td>
+              <td colspan="2" class="justify-content-center">{{ order.vt | currency:'BRL'}}</td>
+              <td colspan="2" class="justify-content-center">{{ order.dtp }}</td>
+              <td colspan="2" class="justify-content-center">{{ order.st }}</td>
+              <td colspan="2" style="text-align: left !important; cursor: pointer">
+                <a (click)="update(order)">
+                  <img alt="" src="assets/img/toolbar/icon-32-update.png"
+                /></a>
+              </td>
+              <td colspan="2" class="justify-content-center" style="cursor: pointer">
+                <a (click)="info(order.idO)">
+                  <img alt="" src="assets/img/toolbar/icon-32-info.png"
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </app-base-table>
+       <app-spinner-loader></app-spinner-loader>
+      </div>
+    </div>
+  </main>
+  <div class="backdrop" [ngStyle]="{ display: display }"></div>
+  <app-base-modal title = {{titleModal}} idModal="myModal">
+    <div class="modal-body"><app-form-upd-order #formOrderComp></app-form-upd-order></div>
+    <div class="modal-footer">
+        <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="formOrderComp.resetaDadosForm(); onClickedClose()"
+      >
+        Fechar
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-dismiss="modal"
+        (click)="formOrderComp.submit()"
+      >
+        Salvar
+      </button>
+    </div>
+  </app-base-modal>
+  <app-base-modal title = {{titleModal}} idModal="myModal2" classTamanho="modal-lg">
+    <div class="modal-body"><app-det-order #formOrderComp2></app-det-order></div>
+    <div class="modal-footer">
+        <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="formOrderComp2.resetaDadosForm(); onClickedClose()"
+      >
+        Fechar
+      </button>
+    </div>
+  </app-base-modal>
+</div>
+

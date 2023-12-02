@@ -1,0 +1,80 @@
+<div class="container-fluid" style="background-color: none;">
+  <section>
+    <app-toolbar></app-toolbar>
+  </section>
+
+  <main class="container main-space-content">
+    <div class="row ">
+
+      <div
+        class="col-12 col-md-9 col-lg-11 justify-content-center mx-auto"
+        style="background-color: white"
+      >
+      <app-base-table [showSearchBar] = true [tbCols] = "tbNameCols" [pages] = "pages" [first] = "first" [last] = "last" [page] = "page">
+          <tbody>
+            <tr *ngFor="let prod of prods">
+              <td colspan="2">{{ prod.nm }}</td>
+              <td colspan="2" class="justify-content-center"> {{ getNameBrand(prod.idB)}}</td>
+              <td colspan="2" class="justify-content-center">{{ prod.lt }}</td>
+              <td colspan="2" class="justify-content-center">{{ prod.vl | currency:'BRL'}}</td>
+              <td colspan="2" style="text-align: left !important;">
+                <a (click)="updateProd(prod)">
+                  <img alt="" src="assets/img/toolbar/icon-32-update.png"
+                /></a>
+              </td>
+              <td colspan="2" class="justify-content-center">
+                <a (click)="deleteProd(prod.idP)">
+                  <img alt="" src="assets/img/toolbar/icon-32-delete.png"
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+
+        </app-base-table>
+       <app-spinner-loader></app-spinner-loader>
+      </div>
+    </div>
+  </main>
+  <div class="backdrop" [ngStyle]="{ display: display }"></div>
+  <div class="modal myMod" tabindex="-1" role="dialog" [ngStyle]="{ display: display }">
+  </div>
+  <app-base-modal title = {{titleModal}} idModal="myModal">
+    <div class="modal-body"><app-form-prod #formProdComp></app-form-prod></div>
+    <div class="modal-footer">
+        <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="formProdComp.resetaDadosForm(); onClickedClose()"
+      >
+        Fechar
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-dismiss="modal"
+        (click)="formProdComp.submit()"
+      >
+        Salvar
+      </button>
+    </div>
+  </app-base-modal>
+  <app-base-alert-modal title = {{titleModal}} body = {{bodyModal}} idModal="myModalAlert">
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-dismiss="modal"
+        (click)="clickBtnNo()"
+      >
+        Não
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="clickBtnYes()"
+      >
+        Sim
+      </button>
+    </div>
+  </app-base-alert-modal>
+</div>

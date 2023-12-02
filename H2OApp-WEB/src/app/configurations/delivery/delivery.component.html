@@ -1,0 +1,81 @@
+<div class="card">
+    <div class="card-header btn-link mouse-pointer" id="headingDelivery" data-toggle="collapse" data-target="#collapseDelivery" aria-expanded="true" aria-controls="collapseDelivery">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button">
+          Entregas & Taxas
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseDelivery" class="collapse show" aria-labelledby="headingDelivery" data-parent="#accordionMy">
+      <div class="card-body bg-light">
+            <section>
+              <app-toolbar action="E"></app-toolbar>
+            </section>
+            <section class="col-md-8 mx-auto background-table" >
+                <app-base-table [showSearchBar] = false [tbCols] = "tbNameCols" [pages] = "pages" [first] = "first" [last] = "last" [page] = "page">
+                    <tbody>
+                      <tr *ngFor="let prod of prods">
+                        <td colspan="2" class="justify-content-center">{{ prod.distance}}</td>
+                        <td colspan="2" class="justify-content-center">{{ prod.txDelivery | currency:'BRL'}}</td>
+                        <td colspan="2" style="text-align: left !important;">
+                          <a (click)="update(prod)">
+                            <img alt="" src="assets/img/toolbar/icon-32-update.png"
+                          /></a>
+                        </td>
+                        <td colspan="2" class="justify-content-center">
+                          <a (click)="delete(prod.id)">
+                            <img alt="" src="assets/img/toolbar/icon-32-delete.png"
+                          /></a>
+                        </td>
+                      </tr>
+                    </tbody>
+
+                  </app-base-table>
+                 <app-spinner-loader></app-spinner-loader>
+            </section>
+
+      </div>
+    </div>
+
+    <app-base-modal title = {{titleModal}} idModal="myModal">
+        <div class="modal-body"><app-form-delivery #formDeliveryComp></app-form-delivery></div>
+        <div class="modal-footer">
+            <button
+            type="button"
+            class="btn btn-secondary"
+            (click)="formDeliveryComp.resetaDadosForm(); onClickedClose()"
+          >
+            Fechar
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-dismiss="modal"
+            (click)="formDeliveryComp.submit()"
+          >
+            Salvar
+          </button>
+        </div>
+      </app-base-modal>
+
+      <app-base-alert-modal title = {{titleModal}} body = {{bodyModal}} idModal = "myModalAlert">
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+            (click)="clickBtnNo()"
+          >
+            Não
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="clickBtnYes()"
+          >
+            Sim
+          </button>
+        </div>
+      </app-base-alert-modal>
+  </div>

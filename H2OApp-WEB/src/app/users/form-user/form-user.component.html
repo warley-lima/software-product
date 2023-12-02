@@ -1,0 +1,24 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+  <div class="form-group row">
+      <app-input-field class="col-12 col-md-10" formControlName="nome"
+          [classeCss]="aplicaCssErro('nome')"
+          id="nome" label="Nome" placeholder="Nome" [control]="formulario.get('nome')">
+      </app-input-field>
+
+      <app-input-field class="col-12 col-md-7" formControlName="email"
+          [classeCss]="aplicaCssErro('email')"
+          id="email" label="Email" placeholder="email@email.com"  [control]="formulario.get('email')">
+        </app-input-field>
+
+      <app-input-field class="col-12 col-md-7" formControlName="password"
+          [classeCss]="aplicaCssErro('password')" type="password"
+          id="password" label="Senha" placeholder=""  [control]="formulario.get('password')">
+     </app-input-field>
+
+     <app-input-field class="col-12 col-md-7" formControlName="confPassword"
+          [classeCss]="aplicaCssErro('confPassword')" type="password"
+          id="confPassword" label="Confirmação" placeholder=""  [control]="formulario.get('confPassword')">
+      </app-input-field>
+  </div>
+</form>

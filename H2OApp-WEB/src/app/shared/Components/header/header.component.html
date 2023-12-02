@@ -1,0 +1,42 @@
+<nav *ngIf=isShow class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #ffffff;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="navbar-brand" routerLinkActive="active" routerLink="/home">
+          <img src="assets/img/h2o.png" width="48" height="30" class="d-inline-block align-top" alt="">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cp">Cupons</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/conf">Configurações</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/ords">Pedidos </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/prods">Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/us">Usuários</a>
+      </li>
+    </ul>
+
+    <div class="navbar-nav ">
+        <div class="icon mr-2">
+            <img src="assets/img/menu/icon-16-user.png" width="16" height="16" alt="">
+            <span class="">{{uName}}</span>
+        </div>
+        <a class="icon mx-auto" style= "cursor: pointer" (click)="logOut()">
+            <img src="assets/img/menu/icon-16-logout.png" width="16" height="16" alt="">
+            <span class="">Sair</span>
+        </a>
+    </div>
+  </div>
+</nav>

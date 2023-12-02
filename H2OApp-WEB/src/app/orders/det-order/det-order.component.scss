@@ -1,0 +1,41 @@
+.form-group {
+  margin-bottom: 0rem !important ;
+  margin-top: -0.75rem !important ;
+  height: 1rem !important;
+}
+.myHr{
+  width: 100% !important;
+}
+
+.wCampo{
+  width: 3.27rem;
+}
+
+.leftSpace{
+ margin-left: -0.75rem;
+}
+
+.myCard {
+  margin-bottom: 1rem !important ;
+}
+.labelStyle{
+  font-weight: bold;
+}
+
+@media (min-width: 48.75em) {
+  .leftSpaceLabel{
+    margin-left: 0.96rem;
+  }
+  .leftSpaceLabel2{
+    margin-left: 1.5rem;
+  }
+  .leftSpaceLabel3{
+    margin-left: 0.50rem;
+  }
+  .leftSpace2{
+    margin-left: -0.75rem;
+  }
+  .leftSpace3{
+    margin-left: -1rem;
+  }
+}

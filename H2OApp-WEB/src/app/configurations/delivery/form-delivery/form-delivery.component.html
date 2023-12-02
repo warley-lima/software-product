@@ -1,0 +1,13 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+        <app-input-field class="col-12 col-md-6" formControlName="distancia"
+          [classeCss]="aplicaCssErro('distancia')"
+          id="distancia" label="Distância (em KM)" placeholder="5" [control]="formulario.get('distancia')">
+        </app-input-field>
+
+        <app-input-field class="col-12 col-md-6" formControlName="valor"
+            [classeCss]="aplicaCssErro('valor')"
+            id="valor" label="Valor R$" placeholder="10,00"  [control]="formulario.get('valor')">
+        </app-input-field>
+       </div>
+  </form>

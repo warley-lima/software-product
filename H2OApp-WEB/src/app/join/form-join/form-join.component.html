@@ -1,0 +1,129 @@
+<form [formGroup]="formulario" (ngSubmit)="hope()">
+  <div class="form-group row">
+    <app-input-field
+      class="col-12 col-md-12"
+      formControlName="nomeFantasia"
+      [classeCss]="aplicaCssErro('nomeFantasia')"
+      id="nomeFantasia"
+      label="Nome Fantasia"
+      placeholder="Nome Fantasia"
+      [control]="formulario.get('nomeFantasia')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-12 col-md-12"
+      formControlName="razaoSocial"
+      [classeCss]="aplicaCssErro('razaoSocial')"
+      id="razaoSocial"
+      label="Razão Social"
+      placeholder="Razão Social"
+      [control]="formulario.get('razaoSocial')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-6 col-md-5"
+      formControlName="cnpj"
+      [classeCss]="aplicaCssErro('cnpj')"
+      id="cnpj"
+      label="CNPJ"
+      placeholder="CNPJ"
+      (focusout)="queryCnpj()"
+      [control]="formulario.get('cnpj')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-6 col-md-7"
+      formControlName="email"
+      [classeCss]="aplicaCssErro('email')"
+      id="email"
+      label="Email"
+      placeholder="email@email.com"
+      (focusout)="queryMail()"
+      [control]="formulario.get('email')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-12 col-md-5"
+      formControlName="responsavel"
+      [classeCss]="aplicaCssErro('responsavel')"
+      id="responsavel"
+      label="Responsável"
+      placeholder="Falar Com"
+      [control]="formulario.get('responsavel')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-8 col-md-4"
+      formControlName="fone"
+      [classeCss]="aplicaCssErro('fone')"
+      id="fone"
+      label="Telefone"
+      placeholder="Telefone com DDD"
+      [control]="formulario.get('fone')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-4 col-md-3"
+      formControlName="cep"
+      [classeCss]="aplicaCssErro('cep')"
+      id="cep"
+      label="CEP"
+      placeholder="xxxxx-xxx"
+      (focusout)="queryAdress()"
+      [control]="formulario.get('cep')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-12 col-md-10"
+      formControlName="adress"
+      [classeCss]="aplicaCssErro('adress')"
+      id="adress"
+      label="Endereço"
+      placeholder="Endereço"
+      [control]="formulario.get('adress')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-4 col-md-2"
+      formControlName="number"
+      [classeCss]="aplicaCssErro('number')"
+      id="number"
+      label="Número"
+      placeholder="xxxx"
+      [control]="formulario.get('number')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-8 col-md-5"
+      formControlName="bairro"
+      [classeCss]="aplicaCssErro('bairro')"
+      id="bairro"
+      label="Bairro"
+      placeholder="Bairro"
+      [control]="formulario.get('bairro')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-9 col-md-5"
+      formControlName="cityName"
+      [classeCss]="aplicaCssErro('cityName')"
+      id="cityName"
+      label="Cidade"
+      placeholder="Cidade"
+      [control]="formulario.get('cityName')"
+    >
+    </app-input-field>
+    <app-input-field
+      class="col-3 col-md-2"
+      formControlName="uf"
+      [classeCss]="aplicaCssErro('uf')"
+      id="uf"
+      label="UF"
+      placeholder="UF"
+      [control]="formulario.get('uf')"
+    >
+    </app-input-field>
+  </div>
+  <hr class="mb-4">
+  <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+</form>

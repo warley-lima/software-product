@@ -1,0 +1,33 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+  <div class="form-group row">
+      <app-input-field class="col-12 col-md-10" formControlName="cupom"
+          [classeCss]="aplicaCssErro('cupom')"
+          id="cupom" label="Cupom" placeholder="Cupom" [control]="formulario.get('cupom')">
+      </app-input-field>
+      <app-input-field class="col-12 col-md-8" formControlName="valor"
+        [classeCss]="aplicaCssErro('valor')"
+        id="valor" label="Valor R$" placeholder="0,00" [control]="formulario.get('valor')">
+      </app-input-field>
+
+      <app-input-field class="col-12 col-md-5" formControlName="hrInicio"
+          [classeCss]="aplicaCssErro('hrInicio')"
+          id="hrInicio" label="Hora Início" placeholder=""  [control]="formulario.get('hrInicio')">
+        </app-input-field>
+
+        <app-input-field class="col-12 col-md-5" formControlName="dtInicio"
+        [classeCss]="aplicaCssErro('dtInicio')"
+        id="dtInicio" label="Data Início" placeholder="10/10/2010"  [control]="formulario.get('dtInicio')">
+      </app-input-field>
+
+      <app-input-field class="col-12 col-md-5" formControlName="hrFim"
+      [classeCss]="aplicaCssErro('hrFim')"
+      id="hrFim" label="Hora Fim" placeholder=""  [control]="formulario.get('hrFim')">
+    </app-input-field>
+
+      <app-input-field class="col-12 col-md-5" formControlName="dtFim"
+          [classeCss]="aplicaCssErro('dtFim')"
+          id="dtFim" label="Data Fim" placeholder="dd/MM/aaaa"  [control]="formulario.get('dtFim')">
+     </app-input-field>
+  </div>
+</form>

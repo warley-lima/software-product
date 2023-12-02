@@ -1,0 +1,78 @@
+<div class="card">
+  <div class="card-header btn-link mouse-pointer" id="headingLiters"  data-toggle="collapse" data-target="#collapseLiters" aria-expanded="false" aria-controls="collapseLiters">
+    <h5 class="mb-0">
+      <button class="btn btn-link collapsed" type="button">
+        Litros
+      </button>
+    </h5>
+  </div>
+
+  <div id="collapseLiters" class="collapse" aria-labelledby="headingLiters" data-parent="#accordionMy">
+    <div class="card-body bg-light">
+          <section>
+            <app-toolbar action="L"></app-toolbar>
+          </section>
+          <section class="col-md-8 mx-auto background-table" >
+              <app-base-table [showSearchBar] = false [tbCols] = "tbNameCols" [pages] = "pages" [first] = "first" [last] = "last" [page] = "page">
+                  <tbody>
+                    <tr *ngFor="let prod of prods">
+                      <td colspan="2" class="justify-content-center">{{ prod.nmL}}</td>
+                      <td colspan="2" class="justify-content-center">
+                        <a (click)="delete(prod.idL)">
+                          <img alt="" src="assets/img/toolbar/icon-32-delete.png"
+                        /></a>
+                      </td>
+                    </tr>
+                  </tbody>
+
+                </app-base-table>
+               <app-spinner-loader></app-spinner-loader>
+          </section>
+
+    </div>
+  </div>
+
+  <app-base-modal title = {{titleModal}} idModal="modal-form-liter">
+      <div class="modal-body" style="max-height:31.25rem; overflow-y: scroll; overflow-x: hidden;">
+        <app-form-liters #formListComp></app-form-liters>
+      </div>
+      <div class="modal-footer">
+          <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="onClickedClose()"
+        >
+          Fechar
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-dismiss="modal"
+          (click)="formListComp.submit()"
+        >
+          Salvar
+        </button>
+      </div>
+    </app-base-modal>
+
+    <app-base-alert-modal title = {{titleModal}} body = {{bodyModal}} idModal = "myLitersModalAlert">
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          (click)="clickBtnNo()"
+        >
+          Não
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="clickBtnYes()"
+        >
+          Sim
+        </button>
+      </div>
+    </app-base-alert-modal>
+</div>
+

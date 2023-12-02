@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
+    <div class="card">
+      <div class="card-body">
+        <div class="form-header purple-gradient">
+          <h3>
+            <i class="fa fa-lock"></i> Login</h3>
+        </div>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input minLength="8" maxLength="125" type="email" class="form-control"
+               formControlName="email" id="email"
+               placeholder="email@email.com">
+
+            <app-campo-control-erro [mostrarErro]="checkTouched('email')" msgErro="Email é obrigatório.">
+            </app-campo-control-erro>
+            <app-campo-control-erro [mostrarErro]="checkValidField()" msgErro="Email inválido.">
+            </app-campo-control-erro>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" formControlName="senha" id="senha" class="form-control"
+            minLength="3" maxLength="25"  placeholder="Senha">
+            <app-campo-control-erro [mostrarErro]="checkTouched('senha')" msgErro="Senha é obrigatória.">
+            </app-campo-control-erro>
+            <app-campo-control-erro [mostrarErro]="checkValidField()" msgErro="Senha inválida.">
+            </app-campo-control-erro>
+          </div>
+
+          <div class="text-center">
+            <button class="btn purple-gradient waves-effect waves-light"  [disabled]="!formulario.valid">Login</button>
+          </div>
+        </form>
+      </div>
+      <app-spinner-loader isShow = "n"></app-spinner-loader>
+    </div>
+  </div>
+
+</div>

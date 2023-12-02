@@ -1,0 +1,9 @@
+<div class="list-group">
+    <app-base-list-group *ngFor="let b of brands"
+          idItem="{{ b.id }}"
+          srcImg="assets/{{ b.lg }}"
+          name="{{ b.nm }}"
+          (click)="clickItem(b.id)"
+          showLogo = true
+    ></app-base-list-group>
+  </div>

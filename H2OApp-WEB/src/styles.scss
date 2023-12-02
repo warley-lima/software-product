@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+/*.md-form label.active {
+    font-size: 0.8rem;
+    transform: translateY(-140%);
+}*/
+/*@import '~bootstrap/dist/css/bootstrap.min.css';*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,*/
+p,
+blockquote,
+a,
+abbr,
+acronym,
+big,
+font,
+img,
+small,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+html {
+  /* height: auto;
+    min-height: 100%;
+     background: -webkit-linear-gradient(top, #FFFFFF 0%,#9F9F9F 100%) repeat-x;
+    background: -moz-linear-gradient(top, #FFFFFF 0%,#9F9F9F 100%)repeat-x;*/
+   /* max-width: 100%; */
+    height: auto;
+    min-height: 100%;
+ /* background: -webkit-linear-gradient(top, #ffffff 0%, #9f9f9f 100%) repeat-x;
+  background: -moz-linear-gradient(top, #ffffff 0%, #9f9f9f 100%) repeat-x;*/
+}
+
+@media (min-width: 45.06em) {
+  html{
+    overflow-x: hidden;
+  }
+}
+
+.mainSpace {
+  padding-top: 4.5rem;
+}
+
+.main-space-content{
+ /* padding-top: 4rem; */
+ padding-top: 1rem;
+}
+
+
+@media (max-width: 48.13em) {
+  .section-header-content {
+    background: white;
+  }
+}
+
+.form-header {
+  color: #fff;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.purple-gradient {
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  background-color: rgba(0, 0, 0, 0);
+}

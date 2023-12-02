@@ -1,0 +1,10 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+  <div class="form-group row">
+      <app-select-field class="col-12" formControlName="statusSel"
+          [classeCss]="aplicaCssErro('statusSel')" [objWithValues]="status"
+          id="statusSel" label="Status" [control]="formulario.get('statusSel')">
+      </app-select-field>
+  </div>
+</form>
+

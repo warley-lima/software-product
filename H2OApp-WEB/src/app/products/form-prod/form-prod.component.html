@@ -1,0 +1,20 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="form-group row">
+      <app-input-field class="col-12 col-md-10" formControlName="nome"
+          [classeCss]="aplicaCssErro('nome')"
+          id="nome" label="Nome" placeholder="Nome" [control]="formulario.get('nome')">
+      </app-input-field>
+      <app-input-field class="col-12 col-md-7" formControlName="valor"
+          [classeCss]="aplicaCssErro('valor')"
+          id="valor" label="Valor R$" placeholder="10,00"  [control]="formulario.get('valor')">
+     </app-input-field>
+     <app-input-field class="col-12 col-md-7" formControlName="litros"
+          [classeCss]="aplicaCssErro('litros')"
+          id="litros" label="Litros" placeholder="1.5"  [control]="formulario.get('litros')">
+      </app-input-field>
+      <app-select-field class="col-12 col-md-7" formControlName="marcas"
+          [classeCss]="aplicaCssErro('marcas')" [objWithValues]="brands"
+          id="marcas" label="Marca" [control]="formulario.get('marcas')">
+      </app-select-field>
+  </div>
+</form>

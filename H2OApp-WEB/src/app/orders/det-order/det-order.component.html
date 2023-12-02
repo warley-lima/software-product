@@ -1,0 +1,153 @@
+<div class="" style="background-color: none;">
+  <main class=" main-space-content">
+    <div class="row ">
+      <div
+        class="col-12 col-lg-11 justify-content-center mx-auto"
+        style="background-color: white"
+      >
+
+      <section class="myCard">
+        <div class="card">
+          <div class="card-body">
+            <form  [formGroup]="formulario">
+              <div class="form-group row">
+                <label for="cliente" class=" col-form-label labelStyle">Cliente:</label>
+                <div class="col-sm-5  col-md-6">
+                  <input type="text" readonly class="form-control-plaintext" id="cliente" formControlName="cliente">
+                </div>
+                <label for="telefone" class="col-form-label leftSpaceLabel labelStyle">Telefone:</label>
+                <div class="col-sm-4 col-md-3 leftSpace">
+                  <input type="text" readonly class="form-control-plaintext" id="telefone" formControlName="telefone">
+                </div>
+              </div>
+              <section class="row">
+                <hr class="myHr">
+             </section>
+              <div class="form-group row">
+                <label for="horaPedido" class="col-form-label wCampo labelStyle">Hora:</label>
+                <div class="col-sm-5  col-md-6">
+                  <input type="text" readonly class="form-control-plaintext" id="horaPedido" formControlName="horaPedido">
+                </div>
+                <label for="dataPedido" class=" col-form-label leftSpaceLabel labelStyle">Data:</label>
+                <div class="col-sm-4 leftSpace">
+                  <input type="text" readonly class="form-control-plaintext" id="dataPedido" formControlName="dataPedido">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="myCard">
+          <div class="card">
+              <div class="card-body">
+                <form  [formGroup]="formulario">
+                  <div class="form-group row" formGroupName="endereco">
+                    <label for="rua" class=" col-form-label wCampo labelStyle">Rua:</label>
+                    <div class="col-sm-5  col-md-5">
+                      <input type="text" readonly class="form-control-plaintext" id="rua" formControlName="rua">
+                    </div>
+                    <label for="compl" class="col-form-label labelStyle">Compl.:</label>
+                    <div class="col-sm-4 leftSpace col-md-5">
+                      <input type="text" readonly class="form-control-plaintext" id="compl" formControlName="compl">
+                    </div>
+                  </div>
+                  <section class="row">
+                    <hr class="myHr">
+                 </section>
+                  <div class="form-group row" formGroupName="endereco">
+                    <label for="bairro" class="col-form-label wCampo labelStyle">Bairro:</label>
+                    <div class="col-sm-5  col-md-5">
+                      <input type="text" readonly class="form-control-plaintext" id="bairro" formControlName="bairro">
+                    </div>
+                    <label for="cidade" class="col-form-label labelStyle">Cidade:</label>
+                    <div class="col-sm-5 leftSpace col-md-5">
+                      <input type="text" readonly class="form-control-plaintext" id="cidade" formControlName="cidade">
+                    </div>
+                  </div>
+                  <section class="row">
+                    <hr class="myHr">
+                 </section>
+                  <div class="form-group row" >
+                    <label for="dicasEntrega" class=" col-form-label wCampo labelStyle">Dicas:</label>
+                    <div class="col-sm-6 col-md-7">
+                      <input type="text" readonly class="form-control-plaintext" id="dicasEntrega" formControlName="dicasEntrega">
+                    </div>
+                    <label for="status" class="col-form-label leftSpace3 labelStyle">Status: </label>
+                   <div class="col-sm-3 leftSpace">
+                       <input type="text" readonly class="form-control-plaintext" id="status" formControlName="status">
+                   </div>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+      </section>
+
+      <section class="myCard">
+          <div class="card">
+              <div class="card-body">
+                <form  [formGroup]="formulario">
+                  <div class="form-group row">
+                      <label for="cupomDesc" class="col-form-label labelStyle">Cupom:</label>
+                      <div class="col-sm-3  col-md-3">
+                        <input type="text" readonly class="form-control-plaintext" formControlName="cupomDesc">
+                      </div>
+                    <label for="formaPagto" class="col-form-label leftSpace2 labelStyle">Pagto:</label>
+                    <div class="col-sm-3 col-md-3 leftSpace">
+                      <input type="text" readonly class="form-control-plaintext"  formControlName="formaPagto">
+                    </div>
+                    <label for="troco" class=" col-form-label leftSpaceLabel3 labelStyle">Troco:</label>
+                    <div class="col-sm-3 col-md-2 leftSpace">
+                      <input type="text" readonly class="form-control-plaintext" formControlName="troco">
+                    </div>
+                  </div>
+                  <section class="row">
+                    <hr class="myHr">
+                 </section>
+                  <div class="form-group row">
+                    <label for="taxaEntrega" class="col-form-label labelStyle">Entrega:</label>
+                    <div class="col-sm-3  col-md-3">
+                      <input type="text" readonly class="form-control-plaintext" formControlName="taxaEntrega">
+                    </div>
+                    <label for="desconto" class="col-form-label leftSpace3 labelStyle">Desconto:</label>
+                    <div class="col-sm-3 col-md-3 leftSpace">
+                      <input type="text" readonly class="form-control-plaintext" formControlName="desconto">
+                    </div>
+                    <label for="valorTotal" class=" col-form-label leftSpace3 labelStyle">Total:</label>
+                    <div class="col-sm-3 col-md-3 leftSpace">
+                      <input type="text" readonly class="form-control-plaintext labelStyle" formControlName="valorTotal">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      </section>
+
+      <section>
+        <div class="table-responsive">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="5">Nome</th>
+                  <th scope="col" colspan="1" *ngFor="let col of tbNameCols">{{ col }}</th>
+               </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let prod of lstProd">
+                  <td colspan="5" class="justify-content-center">{{ prod.nameProduct }}</td>
+                  <td colspan="1" class="justify-content-center">{{ prod.liters }}</td>
+                  <td colspan="1" class="justify-content-center">{{ getBrandById(prod.idBrand) }}</td>
+                  <td colspan="1" class="justify-content-center">{{ prod.quantidade }}</td>
+                  <td colspan="1" class="justify-content-center">{{ prod.precoUnitarioProduto | currency:'BRL'}}</td>
+                </tr>
+              </tbody>
+
+          </table>
+        </div>
+      </section>
+      </div>
+    </div>
+  </main>
+  <!--div class="backdrop" [ngStyle]="{ display: display }"></div-->
+</div>
